@@ -1,0 +1,11 @@
+C:\Users\Nawaf\source\repos\Cal_Pomona_Client\Cal_Pomona_Client\bin\Debug\Cal_Pomona_Client.exe.config
+C:\Users\Nawaf\source\repos\Cal_Pomona_Client\Cal_Pomona_Client\bin\Debug\Cal_Pomona_Client.exe
+C:\Users\Nawaf\source\repos\Cal_Pomona_Client\Cal_Pomona_Client\bin\Debug\Cal_Pomona_Client.pdb
+C:\Users\Nawaf\source\repos\Cal_Pomona_Client\Cal_Pomona_Client\obj\Debug\Cal_Pomona_Client.csprojResolveAssemblyReference.cache
+C:\Users\Nawaf\source\repos\Cal_Pomona_Client\Cal_Pomona_Client\obj\Debug\Cal_Pomona_Client.csproj.CoreCompileInputs.cache
+C:\Users\Nawaf\source\repos\Cal_Pomona_Client\Cal_Pomona_Client\obj\Debug\Cal_Pomona_Client.exe
+C:\Users\Nawaf\source\repos\Cal_Pomona_Client\Cal_Pomona_Client\obj\Debug\Cal_Pomona_Client.pdb
+C:\Users\Nawaf\source\repos\Cal_Pomona_Client\Cal_Pomona_Client\bin\Debug\EntityFramework.dll
+C:\Users\Nawaf\source\repos\Cal_Pomona_Client\Cal_Pomona_Client\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nawaf\source\repos\Cal_Pomona_Client\Cal_Pomona_Client\bin\Debug\EntityFramework.xml
+C:\Users\Nawaf\source\repos\Cal_Pomona_Client\Cal_Pomona_Client\bin\Debug\EntityFramework.SqlServer.xml
