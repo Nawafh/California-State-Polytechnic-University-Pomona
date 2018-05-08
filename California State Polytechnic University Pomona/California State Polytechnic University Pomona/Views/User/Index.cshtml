@@ -1,0 +1,22 @@
+﻿@model IEnumerable<California_State_Polytechnic_University_Pomona.Models.User>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Bronco Hours</h2>
+
+
+@using (Html.BeginForm("LogTest", "User", FormMethod.Post))
+{
+    @Html.Label("BroncoName");
+    <br />
+    @Html.TextBox("Id");
+    <br/>    <br/>
+    @Html.Label("Password");
+    <br />
+    @Html.Password("Password");
+    <br />
+    <input type="submit" value="Login">
+}
+

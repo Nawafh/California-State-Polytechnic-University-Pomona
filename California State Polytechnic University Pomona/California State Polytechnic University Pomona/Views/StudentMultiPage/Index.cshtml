@@ -1,0 +1,66 @@
+﻿@model California_State_Polytechnic_University_Pomona.MultiModels.StudentMultiView
+@{
+    ViewBag.Title = "Index";
+    var student = Model.Students;
+}
+
+<h2>Index</h2>
+
+<table class="table">
+   
+    <tr>
+        <th>Student ID</th>
+        <th>Name</th>
+        <th>Major</th>
+        <th>Email</th>
+   </tr>
+
+@{
+    foreach (var std in Model.Students)
+    {
+     <tr>
+         <td>@std.Student_Id</td>
+         <td>@std.Name</td>
+         <td>@std.Major.Major_Name</td>
+         <td>@std.Emaill</td>
+     </tr>
+    }
+
+}
+    
+</table>
+
+<h4>Enrollment classes</h4>
+
+<table class="table">
+    @{
+<tr>
+    <th>Course Code</th>
+    <th>Course Name</th>
+    <th>Course Credit</th>
+    <th>Days & Times</th>
+    <th>Room</th>
+    <th>Instructor</th>
+    <th>office</th>
+    <th>Details</th>
+    <th>contact</th>
+</tr>
+
+        foreach (var enrol in Model.Enrolls)
+        {
+            <tr>
+                <td>@enrol.FK_Course_ID</td>
+                <td>@enrol.Course.Course_Name</td>
+                <td>@enrol.Course.Course_Credit</td>
+                <td>@enrol.Course.Days___Times</td>
+                <td>@enrol.Course.Room</td>
+                <td>@enrol.Course.Professor.Name</td>
+                <td>@enrol.Course.Professor.Avalability</td>
+                <td>@Html.ActionLink("Details", "OfficeHour", new {id= @enrol.Course.Professor.Professor_Id})</td>
+                <td>@Html.ActionLink("contact", "ContactProfessor", new { Profid = @enrol.Course.Professor.Professor_Id,studentId=enrol.Student.Student_Id })</td>
+            </tr>
+        }
+
+
+    }
+</table>

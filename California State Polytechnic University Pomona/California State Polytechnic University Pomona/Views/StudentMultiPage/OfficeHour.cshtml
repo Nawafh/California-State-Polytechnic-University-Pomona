@@ -1,0 +1,83 @@
+﻿@model California_State_Polytechnic_University_Pomona.MultiModels.StudentMultiView
+@{
+    ViewBag.Title = "Index";
+   
+}
+
+<h2>Instructor</h2>
+
+<table class="table">
+
+    <tr>
+        <th>Name</th>
+        <th>In office</th>
+        <th>building</th>
+        <th>Email</th>
+        <th>Room</th>
+    </tr>
+
+    @{
+        foreach (var prof in Model.Professors)
+        {
+            <tr>
+                <td>@prof.Name</td>
+                <td>@prof.Avalability</td>
+                <td>@prof.Department.Department_Name</td>
+                <td>@prof.Email</td>
+                <td>@prof.Room</td>
+            </tr>
+        }
+
+    }
+
+</table>
+
+<h4>Office hours</h4>
+
+<table class="table">
+    @{
+        <tr>
+            <th>Hour & Day</th>
+            
+        </tr>
+
+        foreach (var x in Model.OfficeHours)
+        {
+            <tr>
+                
+                <td>@x.Office_Hour</td>
+                
+
+            </tr>
+        }
+
+
+    }
+</table>
+
+<h4>Teaching classes</h4>
+
+<table class="table">
+    @{
+        <tr>
+            <th>Course Code</th>
+            <th>Course Name</th>
+            <th>Days & Times</th>
+            <th>Room</th>
+            
+        </tr>
+
+        foreach (var x in Model.Courses)
+        {
+            <tr>
+
+                <td>@x.Course_Id</td>
+                <td>@x.Course_Name</td>
+                <td>@x.Days___Times</td>
+                <td>@x.Room</td>
+            </tr>
+        }
+
+
+    }
+</table>
